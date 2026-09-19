@@ -6,13 +6,8 @@ Aplicação web para cadastrar pessoas e calcular o Índice de Massa Corporal (I
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-<!--
-  Adicione aqui um print da tela e o link do deploy:
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/b22bf234-59b7-4f2b-aef5-8d118d54a4ba" />
 
-  ![Prévia do projeto](./screenshot.png)
-
-  🔗 **Demo:** https://SEU_USUARIO.github.io/NOME_DO_REPO/
--->
 
 ## Funcionalidades
 
@@ -45,8 +40,8 @@ Aplicação web para cadastrar pessoas e calcular o Índice de Massa Corporal (I
 Não há dependências nem etapa de build.
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git
-cd NOME_DO_REPO
+git clone https://github.com/arturokumura/calculadora-imc.git
+cd calculadora-imc
 ```
 
 Depois, abra o arquivo `index.html` no navegador (duplo clique ou `Open with Live Server`, se usar o VS Code).
@@ -66,18 +61,11 @@ Depois, abra o arquivo `index.html` no navegador (duplo clique ou `Open with Liv
 - A função `atualizarTabela()` limpa e reconstrói o corpo da tabela a partir do array sempre que algo muda, então a interface reflete sempre o estado atual dos dados.
 - O cálculo (`calcularIMC`) e a classificação (`classificarIMC`) são funções separadas, reutilizadas na tabela, na ordenação e na remoção por maior/menor IMC.
 
-## Possíveis melhorias
-
-- Persistir a lista com `localStorage`, para não perder os dados ao recarregar a página
-- Substituir os `alert()` por mensagens de erro exibidas na própria tela
-- Editar nome e altura de uma pessoa já cadastrada
-- Alternar ordenação entre crescente e decrescente
-
 ## Aviso
 
 O IMC é uma medida simplificada e não deve ser usado como única referência para avaliar a saúde ou o peso de uma pessoa. Outros fatores individuais também devem ser considerados.
 
 ## Autor
 
-**SEU NOME**
-[LinkedIn](https://linkedin.com/in/SEU_PERFIL) · [GitHub](https://github.com/SEU_USUARIO)
+**ARTUR SILVA OKUMURA**
+[LinkedIn](https://linkedin.com/in/arturokumura) · [GitHub](https://github.com/arturokumura)
