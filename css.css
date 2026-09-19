@@ -1,0 +1,291 @@
+:root {
+    --fundo: #eef2f0;
+    --tinta: #16302b;
+    --suave: #5f736e;
+    --linha: #d9e2df;
+    --destaque: #0b7a7c;
+    --destaque-escuro: #096466;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--tinta);
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.4;
+}
+
+.topo {
+    background: var(--tinta);
+    color: white;
+    padding: 36px 20px 30px;
+}
+
+.topo-interno {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.obs {
+    max-width: 70ch;
+    font-size: 14px;
+    color: #b9ccc7;
+}
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+}
+
+.escala {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 24px;
+}
+
+.faixa {
+    flex: 1 1 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 6px 6px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 4px solid currentColor; 
+}
+
+.faixa b {
+    font-size: 14px;
+}
+
+.status-abaixo {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status-normal {
+    background: #dcf5e7;
+    color: #15803d;
+}
+
+.status-sobrepeso {
+    background: #fdf0c8;
+    color: #a16207;
+}
+
+.status-obesidade {
+    background: #ffe4d6;
+    color: #c2410c;
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width: 900px) {
+    .conteudo {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    form {
+        width: 300px;
+    }
+}
+
+form {
+    flex-shrink: 0;
+    background: white;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.input {
+    margin-bottom: 14px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.campoNome, .campoAltura, .campoPeso {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #b9c7c3;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.botao {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--destaque);
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: var(--destaque-escuro);
+}
+
+input:focus-visible, button:focus-visible {
+    outline: 2px solid var(--destaque);
+    outline-offset: 2px;
+}
+
+.tabela-area {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.rolagem {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 14px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+th {
+    padding: 10px 8px;
+    font-size: 13px;
+    color: var(--suave);
+    border-bottom: 2px solid var(--tinta);
+    white-space: nowrap;
+}
+
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--linha);
+}
+
+th, td {
+    text-align: center;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f5f9f8;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+td button {
+    margin: 0 2px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: var(--tinta);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+td button:hover {
+    filter: brightness(0.94);
+}
+
+.btn-aumentar {
+    background: #d5f0ee;
+}
+
+.btn-diminuir {
+    background: #fdebc8;
+}
+
+.btn-remover {
+    background: white;
+    border-color: #e4a79b;
+    color: #b42318;
+}
+
+.controles-parte3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--linha);
+}
+
+.controles-parte3 button {
+    padding: 9px 14px;
+    border: 1px solid #b9c7c3;
+    border-radius: 8px;
+    background: white;
+    color: var(--tinta);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.controles-parte3 button:hover {
+    background: #eaf3f1;
+    border-color: var(--destaque);
+}
