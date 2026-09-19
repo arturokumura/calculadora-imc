@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo-interno">
+            <h1>IMC</h1>
+            <div class="obs"><i>**O IMC é uma medida simplificada e não deve ser utilizado como única referência para avaliar a saúde ou o peso de uma pessoa. Outros fatores individuais também devem ser considerados.</i></div>
+        </div>
+    </header>
+
+    <main class="pagina">
+
+        <div class="escala">
+            <div class="faixa status-abaixo"><b>Abaixo do peso</b> menos de 18,5</div>
+            <div class="faixa status-normal"><b>Peso normal</b> 18,5 a 24,9</div>
+            <div class="faixa status-sobrepeso"><b>Sobrepeso</b> 25 a 29,9</div>
+            <div class="faixa status-obesidade"><b>Obesidade</b> 30 ou mais</div>
+        </div>
+
+        <div class="conteudo">
+
+            <form>
+                <h2>Cadastrar</h2>
+
+                <div class="input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome da pessoa" class="campoNome">
+                </div>
+
+                <div class="input">
+                    <label for="altura">Altura (m)</label>
+                    <input type="text" id="altura" placeholder="Ex.: 1,75" class="campoAltura">
+                </div>
+
+                <div class="input">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="text" id="peso" placeholder="Ex.: 70,5" class="campoPeso">
+                </div>
+
+                <button type="submit" class="botao">Cadastrar</button>
+            </form>
+
+            <section class="tabela-area">
+                <div class="rolagem">
+                    <table>
+                        <caption>Pessoas Cadastradas</caption>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Altura</th>
+                                <th>Peso</th>
+                                <th>IMC</th>
+                                <th>Status</th>
+                                <th>Opções</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabela-corpo">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="controles-parte3">
+                    <button id="btn_ordenar_nome">Ordenar por Nome</button>
+                    <button id="btn_ordenar_imc">Ordenar por IMC</button>
+                    <button id="btn_remover_maior">Remover Maior IMC</button>
+                    <button id="btn_remover_menor">Remover Menor IMC</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
